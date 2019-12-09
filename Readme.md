@@ -7,12 +7,12 @@ This app demonstrates basic to intermediate DJango technique and usage. I wrote 
 
 *Dockerfiles included* *The docker-compose may loop a little before it stabilizes - I need to include a wait for db function.*
 
-
 The data is seeded using fixtures, if running from the command line use
 
-python manage.py migrate
-python manage.py loaddata seed.json
-python manage.py runserver
+  - python manage.py migrate &&
+  - python manage.py loaddata seed.json &&
+  - python manage.py runserver
+
 
 create a db named btredb, and edit settings.py to set up the database server
 
